@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.nav-section{
+    height: 80px;
+    padding: 2vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+
+        .menubar{
+            margin-right: 16px;
+
+            img{
+                height: 44px;
+                width: 44px;
+            }
+        }
+        .logo-name{
+            font-size: 20px;
+        }
+    }
+    .company-name{
+        img{
+            height: 44px;
+            width: 44;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .user-items{
+        display: flex;
+        img{
+            height: 32px;
+            width: 32px;
+            margin-left: 24px;
+        }
+    }
+}
+
+.main-section{
+    display: flex;
+    height: 100vh;
+
+    .left-area{
+        width: 35%;
+        padding: 12vw 12vw 8vw 4vw;
+        /* padding-left:  4vw;
+        padding-right: 8vw; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top-section{
+            .product-name{
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .product-review{
+                display: flex;
+                align-items: center;
+                margin-bottom: 28px;
+                .product-rating{
+                    img{
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+                .product-viewers{
+                    margin-left: 16px;
+                    color: gray;
+                }
+
+            }
+            .product-description{
+                font-weight: 500;
+                line-height: 1.75;
+                margin-bottom: 32px;
+            }
+            .product-details{
+                button{
+                    padding: 12px 24px;
+                    font-size: 12px;
+                    border: none;
+                    background-color: rgb(16, 129, 55);
+                    color: white;
+                }
+            }
+        }
+        .bottom-section{
+            display: flex;
+            align-items: center;
+            .slide-number{
+                font-size: 36px;
+                font-weight:400;
+                margin-right: 24px;
+            }
+            .product-slides{
+                button{
+                    padding: 4px;
+                    background-color: lightgray;
+                    border-radius: 50%;
+                    border: none;
+                    margin-right: 8px;
+                }
+                .active-slide{
+                    
+                    padding: 6px;  /* unsure as padding 8 is way too big and 6 is not a number we follow  */
+                    background-color: gray;
+                }
+
+            }
+
+        }
+    }
+    .right-area{
+        width: 65%;
+        height: 100vh;
+        align-content: center;
+        background-color: rgb(16, 129, 55);
+        padding-right: 4vw;
+
+        .product-series{
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            font-size: 20px;
+     
+        }
+ 
+        img{
+            height: 70vh;
+        
+            object-fit: cover;
+            transform: translateX(-250px);
+        }
+    }
+}
