@@ -139,12 +139,12 @@ body{
             justify-content: flex-end;
             color: white;
             font-size: 20px;
-     
+            writing-mode: vertical-lr;
         }
  
         img{
-            height: 70vh;
-        
+            width: 1028px;
+            aspect-ratio: auto;
             object-fit: cover;
             transform: translateX(-250px);
         }
