@@ -4,8 +4,7 @@
 body{
     margin: 0;
     font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: sans-serif;
     .nav-section{
         height: 80px;
         padding: 0 8vw;
@@ -46,7 +45,7 @@ body{
             .search-bar, .location-bar{
                 height: 20px;
                 width: 20px;
-                margin-right: 24px;
+                margin-left: 24px;
                 img{
                     width: 100%;
                     height: 100%;
@@ -54,9 +53,137 @@ body{
             }
         }
     }
-    .main-section{
+    .left-sidebar{
+        padding: 0 8vw;
         height: 100vh;
-        background-color: rgb(255, 242, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
         
+        button{
+            padding: 4px;
+            border: none;
+            background-color: black;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+            .active{
+                border: black solid 2px;
+                /* 4 rule exception ? better ideas?  */
+            }
+
+    
+    }
+    .main-section{
+        height: calc(100vh - 70px);
+        background-color: rgb(255, 242, 0);
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 75%);        width: 100%;
+        display: flex;
+        overflow: visible;
+        .product-image{
+            width: 400px;
+            height: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .product-description{
+            position: relative;
+            top: 12vh;
+            left: 16vw;
+            .product-heading{
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 4vh;
+            }
+            img{
+                height: 24px;
+                margin-top: 4vh;
+            }
+        }
+        
+    }
+    .right-sidebar{
+        position: fixed;
+        height: calc(100vh - 70px);
+        width: 264px;
+        padding-right: 8vw;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        .thumbnail-section{
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                margin-bottom: 16vh;
+            }
+        }
+        .version-section{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            .heading{
+                color: gray;
+                margin-bottom: 4vh;
+                text-align: right;
+            }
+            .version-items{
+                .version-item{
+                    font-size: 24px;
+                    font-weight: 600;
+                    text-align: right;
+                    margin-bottom: 16px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        height: 20px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        /* position: fixed; */
+        height: 70px;
+        display: flex;
+        /* background-color: rgb(255, 242, 0); */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 8vw;
+        font-size: 20px;
+        .page-column{
+            display: flex;
+            color: gray;
+            .active-page, .slash {
+                margin-right: 12px;
+            }
+        }
+        .socials-column{
+            display: flex;
+            height: 20px;
+          
+            img{
+                height: 100%;
+                margin-left: 16px;
+            }
+            
+        }
+    }
+    .nav-section, .left-sidebar, .right-sidebar{
+        position: fixed;
+        z-index: 10;
     }
 }
