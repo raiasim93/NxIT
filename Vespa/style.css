@@ -83,18 +83,18 @@ body{
         display: flex;
         overflow: visible;
         .product-image{
-            width: 400px;
-            height: 600px;
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 2 /3;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            
+     
             img{
                 height: 100%;
                 width: 100%;
-                object-fit: contain;
-            }
+                object-fit: contain;            }
         }
         .product-description{
             position: relative;

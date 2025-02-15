@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 16px;
+}
 body{
     margin: 0;
     font-size: 16px;
@@ -10,8 +13,8 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    height: 80px;
-    padding: 0 2vw;
+    height: 88px;
+    padding: 0 12vw;
     align-items: center;
     .logo-items{
         display: flex;
@@ -22,7 +25,7 @@ nav{
             }
         }
         .name{
-            font-size: 20px;
+            font-size: 18px;
             letter-spacing: 2px;
             span{
                 text-decoration: underline;
@@ -36,7 +39,8 @@ nav{
         display: flex;
         align-items: center;
         .nav-item{
-            margin-left: 16px;
+            margin-left: 1rem;
+            font-size: 0.95rem;
             font-style: italic;
             font-weight: 600;
         }
@@ -45,7 +49,7 @@ nav{
             align-items: center;
             background-color: black;
             color: white;
-            padding: 12px 24px;
+            padding: 0.6rem 1.75rem;
             border-radius: 50px;
             img{
                 width: 24px;
@@ -56,25 +60,29 @@ nav{
 }
 main{
     section.hero-section{
-        padding: 8vw 0 0 8vw;
+        padding: 5vw 9vw 0 18vw;
         display: flex;
         height: calc(100vh -80px);
-        .text-section, .image-section{
-            width: 50%;
+        margin-bottom: 5rem;
+        .text-section{
+            width: 40%;
+        }
+        .image-section{
+            width: 60%;
         }
         .text-section{
             .heading{
-                font-size: 56px;
+                padding-right: 1rem;
+                font-size: 44px;
                 color: rgb(63, 84, 163);
                 margin-bottom: 16px;
-                line-height: 0.99;
                 font-weight: 500;
             }
             .sub-heading{
                 color: gray;
                 font-size: 20px;
-                letter-spacing: 1.5px;
                 margin-bottom: 32px;
+                font-weight: 300;
             }
             .log-in-button{
                 width: 272px;
@@ -92,23 +100,23 @@ main{
                     margin-left: 12px;
                 }
             }
-            .testimony-section{
+            .community-section{
+                padding-left: 2rem;
                 background-color: white;
                 display: flex;
                 align-items: center;
                 width: 100%;
-                height: 160px;
-                .testimony-image{
+                height: 140px;
+                .community-image{
                     width: 260px;
                     margin-right: 20px;
                     img{
-                        width: 100%;
+                        max-width: 192px;
                         object-fit: cover;
                     }
                 }
-                .testimony-desc{
-                    font-size: 16px;
-                    letter-spacing: 1.25px;
+                .community-desc{
+                    font-size: 18px;
                     span{
                         color: rgb(63, 84, 163);
                         font-weight: bold;
@@ -117,6 +125,7 @@ main{
             }
         }
         .image-section{
+            padding-left: 4rem;
             img{
                height: 100%;
                width: 100%;
@@ -125,4 +134,5 @@ main{
             }
         }
     }
+
 }
