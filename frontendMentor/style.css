@@ -146,10 +146,11 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 5vh 3vw;
+            padding: 5vh 2vw;
             width: 50%;
             background-color: white;
             border-radius: 8px;
+            font-weight: 300;
             /* quote left icon */
             i.fa-solid.fa-quote-left{
                 font-size: 4rem;
@@ -182,13 +183,14 @@ main{
         }
     }
 
-    section.features-section{
+    section.coverage-section{
         background-color: hsl(0, 0%, 96%);
         padding: 0 18vw;
         margin-bottom: 5rem;
         .coverage-container{
             display: flex;
             flex-direction: column;
+            margin-bottom: 5rem;
             .coverage-title{
                 text-align: center;
                 padding: 4rem 0;
@@ -210,5 +212,61 @@ main{
                 }
              }
     }
-}
+    .feature-items{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    }
+    section.feature-section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+        padding: 4vw 18vw;
+        margin-bottom: 5rem;
+        .feature-item{
+            width: 100%;
+            display: flex;
+            gap: 3rem;
+
+            .image-section, .text-section{
+                width: 50%;
+            }
+            .image-section{
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .text-section{
+                display: flex;
+                row-gap: 2rem;
+                flex-direction: column;
+                justify-content: center;
+                .text-emoji{
+                    button{
+                        width: 80px;
+                        height: 80px;
+                        font-size: 32px;
+                        border-radius: 50%;
+                        border: none;                        
+                    }
+                }
+                .text-heading{
+                    font-size: 3rem;
+                }
+                .text-description{
+                    color: gray;
+                    font-weight: 300;
+                    letter-spacing: 1.20px;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .feature-item:nth-child(even){
+            flex-direction: row-reverse;
+        }
+    }
 }
