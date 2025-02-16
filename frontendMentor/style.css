@@ -364,7 +364,7 @@ main{
 
     }
     section.subscription-section{
-        padding: 12vh 18vw 8vh 18vw;
+        padding: 12vh 18vw 0 18vw;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -395,5 +395,53 @@ main{
             }
         }
     }
-    
+    section.pros-section{
+        padding: 12vh 18vw 8vh 18vw;
+        width: 100%;
+        display: flex;
+        column-gap: 2rem;
+        .pros-item{
+            display: flex;
+            row-gap: 1rem;
+            align-items: center;
+            flex-direction: column;
+            padding: 4rem 2rem;
+            border-radius: 8px;
+            width: 50%;
+            background-color: white;
+            .fa-figma{
+                font-size: 4rem;
+                color: rgb(63, 84, 163);
+            }
+            .fa-star{
+                font-size: 4rem;
+                color: rgb(63, 84, 163);
+            }
+            .item-heading{
+                font-size: 1.8rem;
+            }
+            .item-desc{
+                text-align: center;
+                color: gray;
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+       
+    }
+    section.learn-pro{
+        display: flex;
+        justify-content: center;
+        padding: 0vh 0vw 12vh 0vw;
+       button{
+        padding: 1rem 2rem;
+        font-style: italic;
+        font-size: 1.1rem;
+        background-color: rgb(237, 44, 72);
+        color: white;
+        border-radius: 40px;
+        border: none;
+       }
+    }   
+  
 }
