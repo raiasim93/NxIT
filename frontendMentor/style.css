@@ -559,21 +559,21 @@ main {
     }
   }
   section.join-us-section {
-    background-image: url(images/join-community/elccwjjsp2oqatbluvxi.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+    padding: 0 0 12vh 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    .join-section {
-      padding: 10vh 9vw 10vh 9vw;
-      width: 55%;
-      display: flex;
-      flex-direction: column;
-      row-gap: 2rem;
-      text-align: center;
-      .join-heading {
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    width: 40%;
+    margin: auto;
+    /* setting up background image */
+    background-image: url(images/join-community/elccwjjsp2oqatbluvxi.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    .join-heading {
         font-size: 2.8rem;
         color: rgb(63, 84, 163);
         font-weight: 500;
@@ -595,6 +595,13 @@ main {
         border-radius: 40px;
         border: none;
       }
-    }
   }
+}
+
+.sect {
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  
 }
