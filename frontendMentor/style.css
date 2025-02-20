@@ -10,6 +10,13 @@ body {
   font-family: "Heebo", serif;
   background-color: hsla(0, 0%, 95%, 0.724);
 }
+@media screen and (max-width: 1440px) {
+    body{
+        margin-left: -12vw;
+        margin-right: -12vw;
+    }
+
+}
 nav {
   display: flex;
   justify-content: space-between;
