@@ -3,10 +3,492 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Front-End Mentor</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
-  <body>
-   
+  <body class="m-0 bg-gray-100">
+    <nav
+      class="px-10 2xl:px-[14vw] flex w-screen h-20 justify-between items-center"
+    >
+      <div class="flex items-center gap-x-2">
+        <img class="h-6 w-6 object-cover" src="images/logo-mobile.svg" alt="" />
+        <div class="text-xl tracking-widest">
+          <span
+            class="underline underline-offset-4 decoration-wavy decoration-red-300"
+          >
+            Frontend
+          </span>
+          Mentor
+        </div>
+      </div>
+      <div class="flex items-center gap-x-4">
+        <a href="" class="italic text-sm font-semibold">LEARNING PATHS</a>
+        <a href="" class="italic text-sm font-semibold">CHALLENGES</a>
+        <a href="" class="italic text-sm font-semibold">SOLUTIONS</a>
+        <a href="" class="italic text-sm font-semibold">ARTICLES</a>
+        <a href="" class="italic text-sm font-semibold">UNLOCK PRO</a>
+        <a
+          href=""
+          class="italic text-sm font-semibold flex gap-x-4 items-center bg-black text-white py-2.5 px-6 rounded-4xl"
+        >
+          LOG IN WITH GITHUB
+          <i class="fa-brands text-2xl fa-github"></i>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <section class="ps-[8vw] py-28 flex">
+        <div class="w-1/2 flex flex-col pe-12 gap-y-8">
+          <div class="text-5xl font-medium text-blue-800 tracking-wide">
+            Improve your coding skills by building realistic projects
+          </div>
+          <div class="text-gray-500 font-normal tracking-wider text-xl">
+            Our professionally designed challenges help you gain hands-on
+            experience writing HTML, CSS, and JavaScript. We create the designs
+            so you can focus on the code and see your skills skyrocket!
+          </div>
+          <div
+            class="bg-pink-600 text-white font-medium italic max-w-3xs px-4 py-4 flex gap-x-2 justify-center rounded-4xl"
+          >
+            LOG IN WITH GITHUB
+            <i class="fa-brands text-2xl fa-github"></i>
+          </div>
+          <div class="h-32 flex bg-white items-center p-4 gap-x-4">
+            <img
+              class="h-full w-3xs object-contain"
+              src="images/home-community-avatars.webp"
+              alt=""
+            />
+
+            <div class="text-gray-500 font-medium">
+              Join
+              <span class="text-blue-800"> 968,327 </span>
+              developers building projects, reviewing code, and helping each
+              other improve.
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 image-section">
+          <img class="h-full w-full object-cover" src="images/home-hero.webp" alt="" />
+        </div>
+      </section>
+      <!-- <section class="testimonial-section">
+
+        <div class="testimonial-item">
+          <div class="item-quote">
+            <i
+              class="fa-sharp fa-solid fa-quote-left"
+              style="color: #d4d4d4"
+            ></i>
+          </div>
+          <div class="item-comment">
+            I highly recommend Frontend Mentor. Skip the search for project
+            ideas and dive into ready-made challenges that help you level up as
+            a developer.
+          </div>
+          <div class="item-image">
+            <img src="images/item-image1.webp" alt="" />
+          </div>
+          <div class="item-name">KEVIN POWELL</div>
+          <div class="item-title">Web Developer & YouTuber</div>
+        </div>
+        <div class="testimonial-item">
+          <div class="item-quote">
+            <i
+              class="fa-sharp fa-solid fa-quote-left"
+              style="color: #d4d4d4"
+            ></i>
+          </div>
+          <div class="item-comment">
+            Frontend Mentor is a win-win. You can sharpen your skills building
+            websites and add finished projects to your portfolio to help land a
+            job!
+          </div>
+          <div class="item-image">
+            <img src="images/item-image2.webp" alt="" />
+          </div>
+          <div class="item-name">JESSICA CHAN</div>
+          <div class="item-title">Web Developer & YouTuber</div>
+        </div>
+      </section>
+      <section class="coverage-section">
+        <div class="coverage-container">
+          <div class="coverage-title">AS FEATURED ON ..</div>
+          <div class="coverage-items">
+            <div class="coverage-item">
+              <img src="images/logo-css-tricks.svg" alt="" />
+            </div>
+            <div class="coverage-item">
+              <img src="images/logo-stack-overflow.svg" alt="" />
+            </div>
+            <div class="coverage-item">
+              <img src="images/logo-product-hunt.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature-section">
+        <div class="feature-item">
+          <div class="image-section">
+            <img src="images/featuresImage/home-benefit-1.webp" alt="" />
+          </div>
+          <div class="text-section">
+            <div class="text-emoji">
+              <button>😈</button>
+            </div>
+            <div class="text-heading">Escape tutorial hell</div>
+            <div class="text-description">
+              Add projects to your learning journey and put your knowledge to
+              the test. The real learning happens when you start solving
+              real-world problems yourself.
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="image-section">
+            <img src="images/featuresImage/home-benefit-2.webp" alt="" />
+          </div>
+          <div class="text-section">
+            <div class="text-emoji">
+              <button>🤩</button>
+            </div>
+            <div class="text-heading">Build portfolio-worthy projects</div>
+            <div class="text-description">
+              Design is hard. We take care of the project ideas and design so
+              you can focus on the coding. You’ll end up with an incredible
+              portfolio of stunning projects!
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="image-section">
+            <img src="images/featuresImage/home-benefit-3.webp" alt="" />
+          </div>
+          <div class="text-section">
+            <div class="text-emoji">
+              <button>🚀</button>
+            </div>
+            <div class="text-heading">Banish impostor syndrome</div>
+            <div class="text-description">
+              We’ve all felt out of our depth before. Getting hands-on
+              experience is an incredible way to build confidence, refine your
+              workflow, and supercharge your learning.
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="image-section">
+            <img src="images/featuresImage/home-benefit-4.webp" alt="" />
+          </div>
+          <div class="text-section">
+            <div class="text-emoji">
+              <button>🛠️</button>
+            </div>
+            <div class="text-heading">Practice new tools</div>
+            <div class="text-description">
+              The front-end landscape changes constantly. Our design-led
+              challenges let you pick your tools to help you adapt, experiment,
+              and keep up with the latest trends.
+            </div>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="image-section">
+            <img src="images/featuresImage/home-benefit-5.webp" alt="" />
+          </div>
+          <div class="text-section">
+            <div class="text-emoji">
+              <button>🤝</button>
+            </div>
+            <div class="text-heading">Create job opportunities</div>
+            <div class="text-description">
+              We have a
+              <span> Hiring Platform </span>
+              that runs alongside this platform. Just by building projects and
+              engaging with the community, you could open up job opportunities!
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guide-section-container">
+        <div class="text-wrapper">
+          <div class="text-heading">How it works</div>
+          <div class="text-items">
+            <div class="active-text-item">
+              <div class="first-row">
+                <div class="item-number">1</div>
+                <div class="item-subtitle">Choose your challenge</div>
+              </div>
+              <div class="second-row">
+                <div class="item-description">
+                  Browse our collection of professionally designed projects.
+                  Pick one that suits the level you’re currently at.
+                </div>
+              </div>
+            </div>
+            <div class="text-item">
+              <div class="item-number">2</div>
+              <div class="item-subtitle">Code the design</div>
+            </div>
+            <div class="text-item">
+              <div class="item-number">3</div>
+              <div class="item-subtitle">Submit your solution</div>
+            </div>
+            <div class="text-item">
+              <div class="item-number">4</div>
+              <div class="item-subtitle">Give others feedback</div>
+            </div>
+          </div>
+        </div>
+        <div class="image-wrapper">
+          <img src="images/how-it-works/home-how-it-works-1.webp" alt="" />
+        </div>
+      </section>
+      <section class="subscription-section">
+        <div class="subscription-overview">
+          <div class="subscription-heading">
+            Take your skills to the next level with our
+            <button>PRO</button> subscription.
+          </div>
+          <div class="subscription-sub-heading">
+            Step into the shoes of a professional developer and build projects
+            in the most realistic way possible. Our Pro subscription will help
+            you prepare for life as a professional developer.
+          </div>
+        </div>
+      </section>
+      <section class="pros-section">
+        <div class="pros-item">
+          <i class="fa-brands fa-figma"></i>
+          <div class="item-heading">Access each challenge’s design file</div>
+          <div class="item-desc">
+            Professional teams use tools like Figma. By using these tools when
+            building projects, you’ll save time, create more accurate solutions,
+            and gain hands-on experience working like a pro.
+          </div>
+        </div>
+        <div class="pros-item">
+          <i class="fa-solid fa-star"></i>
+          <div class="item-heading">Tackle our premium challenges</div>
+          <div class="item-desc">
+            Our premium challenges are the most realistic, comprehensive
+            practice projects you’ll find. They also make incredible portfolio
+            pieces to help you “wow!” recruiters and get hired.
+          </div>
+        </div>
+      </section>
+      <section class="learn-pro">
+        <button class="learn-about-pro-btn">LEARN ABOUT PRO</button>
+      </section>
+      <section class="community-section">
+        <div class="title-row">
+          <div class="row-heading">A little ♥️ from our community</div>
+          <div class="row-button">
+            <button class="btn-left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="btn-right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="review-row">
+          <div class="row-item">
+            <div class="user-comment">
+              This platform provides everything developers need to improve their
+              skills. The community is great, and the challenges keep me
+              motivated, instill accountability through regular submissions, and
+              allow me to build a professional portfolio by showcasing diverse
+              projects.
+            </div>
+            <div class="user-details">
+              <div class="user-image">
+                <img src="images/avatar/home-avatar-francesca.webp" alt="" />
+              </div>
+              <div class="user-profiles">
+                <div class="user-name">Francesca</div>
+                <div class="user-handler">@frrann</div>
+              </div>
+            </div>
+          </div>
+          <div class="row-item">
+            <div class="user-comment">
+              Frontend Mentor eliminated the hurdle of sourcing designs, letting
+              me focus on development. Their professional projects, especially
+              in the Pro subscription, challenge me to create complex,
+              multi-page websites. With a supportive community and feedback from
+              advanced programmers, my skills have been elevated to new heights.
+            </div>
+            <div class="user-details">
+              <div class="user-image">
+                <img src="images/avatar/home-avatar-alfie.webp" alt="" />
+              </div>
+              <div class="user-profiles">
+                <div class="user-name">Alfie</div>
+                <div class="user-handler">@alfiemitchell123</div>
+              </div>
+            </div>
+          </div>
+          <div class="row-item">
+            <div class="user-comment">
+              Frontend Mentor transformed me from a newbie to a professional
+              developer, enabling me to create flawless, responsive, accessible
+              websites. It’s a superb platform for feedback with a supportive
+              community backing your growth. Through it, I evolved from a
+              frontend to a full-stack developer.
+            </div>
+            <div class="user-details">
+              <div class="user-image">
+                <img src="images/avatar/home-avatar-hikmah.webp" alt="" />
+              </div>
+              <div class="user-profiles">
+                <div class="user-name">Hikmah</div>
+                <div class="user-handler">@Hikmahx</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="faq-heading">FAQs</div>
+        <div class="faq-items">
+          <div class="faq-item">
+            Is it free? <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-item">
+            Can I use these projects in my portfolio?
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-item">
+            Can I take the challenges as a beginner?
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-item">
+            How do I start? <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="faq-item">
+            How can I get help if I'm stuck on a challenge?<i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="faq-item">
+            Can I use libraries/frameworks on these projects?<i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+          <div class="faq-item">
+            Am I guaranteed to get hired through the Hiring Platform?<i
+              class="fa-solid fa-plus"
+            ></i>
+          </div>
+        </div>
+      </section>
+      <section class="join-us-section">
+        <div class="join-heading">
+          Join 969,316 people building portfolio-worthy projects
+        </div>
+        <div class="join-description">
+          Our highly supportive, positive community is here to help you improve
+          your skills. We all try to help each other out wherever possible. We’d
+          love to welcome you to our community!
+        </div>
+        <button>LOG IN WITH GITHUB</button>
+      </section>
+      <section class="hiring-section">
+        <div class="text-section">
+            <div class="text-title">Are you looking to hire talented, passionate developers?</div>
+            <div class="text-description">Our Hiring Platform helps you connect with our diverse community of talented early-career developers. Stop wading through hundreds of resumes and get chatting to skilled developers in minutes.</div>
+            <button> START HIRING DEVELOPERS </button>
+        </div>
+        <div class="image-section">
+            <img src="images/join-community/elccwjjsp2oqatbluvxi.svg" alt="">
+        </div>
+        <div class="hiring-image">
+            <img src="images/hiring/home-hiring .webp" alt="">
+        </div>
+      </section> -->
+    </main>
+    <!-- <footer class="footer-section">
+        <div class="footer-socials">
+            <div class="company-items">
+                <div class="company-logo"> 
+                    <img src="images/logo-mobile.svg" alt="">
+                </div>
+                <div class="company-name"> <span> Frontend  </span> Mentor</div>
+            </div>
+            <div class="social-items">
+                <div class="social-item"><i class="fa-brands fa-discord"></i></div>
+                <div class="social-item"><i class="fa-brands fa-twitter"></i></i></div>
+                <div class="social-item"> <i class="fa-brands fa-linkedin"></i> </div>
+                <div class="social-item"> <i class="fa-brands fa-facebook"></i> </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-newsletter">
+               <div class="newsletter-title"> Stay up to date </div>
+               <div class="newsletter-cont"> with new challenges, featured solutions, selected articles, and our latest news </div>
+               <div class="subscription-section">
+                    <input type="email" id="email" placeholder="email@exmple.com">
+                    <button> SUBSCRIBE </button>
+               </div>
+            </div>
+            <div class="footer-navlinks">
+                <div class="nav-column">
+                    <div class="column-heading">FRONTEND MENTOR</div>
+                    <div class="column-items">
+                        <div class="column-item">Unlock Pro</div>
+                        <div class="column-item"> Contact us </div>
+                        <div class="column-item"> FAQs </div>
+                    </div>
+                </div>
+                <div class="nav-column">
+                    <div class="column-heading">EXPLORE</div>
+                    <div class="column-items">
+                        <div class="column-item">Learning paths</div>
+                        <div class="column-item"> Challenges </div>
+                        <div class="column-item"> Solutions </div>
+                        <div class="column-item"> Articles </div>
+                    </div>
+                </div>
+                <div class="nav-column">
+                    <div class="column-heading">COMMUNITY</div>
+                    <div class="column-items">
+                        <div class="column-item">Discord</div>
+                        <div class="column-item"> Guidelines </div>
+                    </div>
+                </div>
+                <div class="nav-column">
+                    <div class="column-heading">FOR COMPANIES</div>
+                    <div class="column-items">
+                        <div class="column-item">Hire developers</div>
+                        <div class="column-item"> Train developers </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-copyright">
+            <div class="copyright-year">
+                <i class="fa-regular fa-copyright"></i> Frontend Mentor 2019 - 2025
+            </div>
+            <div class="copyright-items">
+                <div class="copyright-item"> Terms </div>
+                <div class="copyright-item"> Cookie Policy </div>
+                <div class="copyright-item"> Privacy Policy </div>
+                <div class="copyright-item"> License </div>
+            </div>
+        </div>
+    </footer> -->
+    <div></div>
   </body>
 </html>
